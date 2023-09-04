@@ -1,15 +1,18 @@
 * {
-    background-color: #050F1F;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: #050F1F;
+
+}
 .navbar {
     display: flex;
     gap: 45px;
-    justify-content: end;
     padding-top: 35px;
     padding-right: 105px;
+    justify-content: end;
 }
 
 ul li {
@@ -28,8 +31,79 @@ ul li {
     color: #2571eb;
 }
 
+.navbar_title {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    justify-content: start;
+    z-index: 15;
+    top: 31px;
+    left: 80px;
+    font-size: 30px;
+    background-color: none;
+}
+
 .translate {
     width: 55%;
     padding-top: 5px;
     cursor: pointer;
+}
+
+
+.img_top_global {
+    position: absolute;
+    width: 40%;
+    top: 0px;
+}
+
+
+
+.span_body_top_2 {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    top: 350px;
+    left: 360px;
+}
+
+
+
+.span_body_top_4 {
+    position: relative;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    top: 350px;
+    left: 360px;
+}
+.image_top_left {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: 0;
+}
+
+.vertical-line{
+    border-left: 2px solid #ffffff;
+    display: inline-block;
+    position: absolute;
+    height: 350px;
+    margin: 0 20px;
+    bottom: 0px;
+    left: 55px;
+}
+
+.vertical-line_github {
+    background-color: #fff;
+    width: 55px;
+    position: absolute;
+    bottom: 190px;
+    left: 25px;
+    border-radius: 15px;
 }
