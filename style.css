@@ -1,0 +1,35 @@
+* {
+    background-color: #050F1F;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 45px;
+    justify-content: end;
+    padding-top: 35px;
+    padding-right: 105px;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar_link {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.navbar_link:hover {
+    color: #2571eb;
+}
+
+.translate {
+    width: 55%;
+    padding-top: 5px;
+    cursor: pointer;
+}
