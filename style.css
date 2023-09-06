@@ -183,10 +183,6 @@ ul li {
 
 
 
-
-
-
-
 .body_middle_card_1 h2 {
     position: relative;
     color: #A8B2D1;
@@ -372,21 +368,27 @@ ul li {
     position: absolute;
     bottom: 0; 
     top: 1550px;
+    width: 50%;
   
 }
 
-._div_body_bottom  {
+
+.div_body_bottom  {
     display: block;
     width: 100%;
     position: relative;
-    top: 1750px;
+    top: 1000px;
 
+}
+.hr_bottom {
+    position: relative;
+    left: 620px;
+    bottom: 30px;
 }
 
 .h2_body_bottom {
     position: relative;
-    top: 1750px;
-    color: #3663ab;
+    color: #A8B2D1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -394,17 +396,7 @@ ul li {
     width: 100%;
 }
 
-.hr_button {
-    position: relative;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 700;
-    top: 1750px;
-    left: 550px;
-    width: 50%;
-}
-
 .button_body_bottom {
     position: relative;
-    top: 1750px;
+    top: 1000px;
 }
