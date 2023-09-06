@@ -9,18 +9,18 @@
         <title>Portfolio - Jimmy Beugnies</title>
     </head>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="accueil">
             <ul>
-                <li><a class="navbar_link" href="#">Accueil</a></li>
+                <li><a class="navbar_link" href="#" >Accueil</a></li>
             </ul>
             <ul>
-                <li><a class="navbar_link" href="#">Projets</a></li>
+                <li><a class="navbar_link" href="#project">Projets</a></li>
             </ul>
             <ul>
-                <li><a class="navbar_link profil" href="#">Profil</a></li>
+                <li><a class="navbar_link profil" href="#profile">Profil</a></li>
             </ul>
             <ul>
-                <li><a class="navbar_link" href="#">Contact</a></li>
+                <li><a class="navbar_link" href="#contacted">Contact</a></li>
             </ul>
             <ul>
                 <li><img class="navbar_link translate" src="assets/image.png" onclick="ChangeDeLangue();">
@@ -58,14 +58,14 @@
         </section>
         <section class="section_body_middle">
             <div class="_div_body_middle">
-                <h1>Projets</h1>
+                <h1 id="project" >Projets</h1>
                 <hr>
                 <card class="body_middle_card_1">
-                    <h2>Projet 1</h2>
+                    <h2> Projet 1</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
                 <card class="body_middle_card_2">
-                    <h2>Projet 2</h2>
+                    <h2 >Projet 2</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
                 <card class="body_middle_card_3">
@@ -73,15 +73,15 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
                 <card class="body_middle_card_4">
-                    <h2>Projet 1</h2>
+                    <h2>Projet 4</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
                 <card class="body_middle_card_5">
-                    <h2>Projet 2</h2>
+                    <h2>Projet 5</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
                 <card class="body_middle_card_6">
-                    <h2>Projet 3</h2>
+                    <h2 id="profile">Projet 6</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
                 </card>
             </div>
@@ -89,11 +89,23 @@
 
         <section class="section_body_bottom">
             <div class="div_body_bottom">
-                <h2 class="h2_body_bottom">Mon profil</h2>
+                <h2 class="h2_body_bottom" >Mon profil</h2>
                 <hr class="hr_bottom">
                 <button class="button_body_bottom" onclick="CV()">Mon CV</button>
+                <button class="button_body_bottom" onclick="CV2()">Mes Titres</button>
+
             </div>
         </section>
+        <section class="section_body_footer">
+            <div class="div_body_footer">
+                <h2 class="h2_body_footer" id="contacted">Me contacter</h2>
+                <hr class="hr_footer">
+                <a href="#" class="span_body_footer" onclick="Contact(event)">Contact</a>
+            </div>
+        </section>
+        <img class="img_body_footer" src="assets/image4.png" >
+        <a class="remonter" href="#accueil">Remonter</a>
+        <footer>2023 Copyright. Tout droits réservés à <font color="#e2de76"> Jimmy Beugnies</font></footer>
     </body>
     <script src="./script.js"></script>
     </html>
