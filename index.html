@@ -1,65 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Jimmy Beugnies</title>
-</head>
-<header>
-    <nav class="navbar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio - Jimmy Beugnies</title>
+    </head>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a class="navbar_link" href="#">Accueil</a></li>
+            </ul>
+            <ul>
+                <li><a class="navbar_link" href="#">Projets</a></li>
+            </ul>
+            <ul>
+                <li><a class="navbar_link profil" href="#">Profil</a></li>
+            </ul>
+            <ul>
+                <li><a class="navbar_link" href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><img class="navbar_link translate" src="assets/image.png" onclick="ChangeDeLangue();">
+                    <a href="#" class="navbar_button_link navbar_link"></a>
+                </li>
+            </ul>
+        </nav>
         <ul>
-            <li><a class="navbar_link" href="#">Accueil</a></li>
+            <li><a class="navbar_title" href="#">Jimmy Beugnies</a></li>
         </ul>
-        <ul>
-            <li><a class="navbar_link" href="#">Projets</a></li>
-        </ul>
-        <ul>
-            <li><a class="navbar_link profil" href="#">Profil</a></li>
-        </ul>
-        <ul>
-            <li><a class="navbar_link" href="#">Contact</a></li>
-        </ul>
-        <ul>
-            <li><img class="navbar_link translate" src="assets/image.png"><a href="#" class="navbar_button_link"></a>
-            </li>
-        </ul>
-    </nav>
-    <ul>
-        <li><a class="navbar_title" href="#">Jimmy Beugnies</a></li>
-    </ul>
-    <img class="img_top_global" src="assets/image2.png" class="image_top_right">
-</header>
+        <img class="img_top_global" src="assets/image2.png" class="image_top_right">
+    </header>
 
-<body>
-    <section class="section_body_top">
-        <div class="div_body_top">
-            <span class="span_body_top_2">Développeur web et web mobile</span>
-            <span class="span_body_top_4"><br>
-                En tant que <font color="#e2de76">développeur web et mobile</font>,<br>
-                je crée des solutions digitales
-                pour répondre aux besoins <br>de la clientèles.
-                Mon objectif est de fournir des expériences utilisateurs <br>
-                fluides et intuitives, en utilisant les dernières technologies et <br>
-                les meilleures pratiques de <font color="#e2de76">développement</font>.
-                </span>
-        </div>
-        <img src="assets/image3.png" class="image_top_left">
-        <span class="vertical-line"></span>
-        <div class="div_vertical_line_github">
-            <a class="vertical-line_github" href="https://github.com/Zrtehhz">
-                <img src="assets/logoGithub.png" class="vertical-line_github">
+    <body>
+        <section class="section_body_top">
+            <div class="div_body_top">
+                <span class="span_body_top_2">Développeur web et web mobile</span>
+                <span class="span_body_top_4"><br>
+                    En tant que <font color="#e2de76">développeur web et mobile</font>,<br>
+                    je crée des solutions digitales
+                    pour répondre aux besoins <br>de la clientèles.
+                    Mon objectif est de fournir des expériences utilisateurs <br>
+                    fluides et intuitives, en utilisant les dernières technologies et <br>
+                    les meilleures pratiques de <font color="#e2de76">développement</font>.
+                    </span>
+            </div>
+            <img src="assets/image3.png" class="image_top_left">
+            <span class="vertical-line"></span>
+            <div class="div_vertical_line_github">
+                <a class="vertical-line_github" href="https://github.com/Zrtehhz">
+                    <img src="assets/logoGithub.png" class="vertical-line_github">
 
-            </a>
-        </div>
-    </section>
-    <section class="section_body_middle">
-        <div class="_div_body_middle">
-
-        </div>
-    </section>
-</body>
-
-</html>
+                </a>
+            </div>
+        </section>
+        <section class="section_body_middle">
+            <h1>Projets</h1>
+            <hr>
+            <div class="_div_body_middle">
+                <card class="body_middle_card_1">
+                    <h2>Projet 1</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
+                </card>
+                <card class="body_middle_card_2">
+                    <h2>Projet 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
+                </card>
+                <card class="body_middle_card_3">
+                    <h2>Projet 3</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
+                </card>
+            </div>
+        </section>
+    </body>
+    <script src="./script.js"></script>
+    </html>
