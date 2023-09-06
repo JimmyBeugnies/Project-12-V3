@@ -1,12 +1,47 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: auto;
+    scrollbar-color: #0d264f #3663ab;
 }
 
 body {
     background-color: #050F1F;
 
 }
+
+
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #3663ab;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0d264f;
+    border-radius: 24px;
+    border: 3px none #12264f;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar {
     display: flex;
     gap: 45px;
@@ -161,7 +196,8 @@ ul li {
     top: 540px;
     left: 260px;
     width: 33%;
-    
+    margin: 0 auto;
+
 }
 
 .body_middle_card_1 p {
@@ -171,10 +207,12 @@ ul li {
     font-size: 20px;
     font-weight: 700;
     top: 555px;
-    left: 100px;
-    width: 65%;
-    background-color: #0d264f;
+    margin: 0 auto;
+        width: 65%;
+    background-color: rgb(13, 38, 79);
     padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
 }
 
 
@@ -187,7 +225,8 @@ ul li {
     top: 540px;
     left: 260px;
     width: 33%;
-    
+    margin: 0 auto;
+
 }
 
 .body_middle_card_2 p {
@@ -197,10 +236,12 @@ ul li {
     font-size: 20px;
     font-weight: 700;
     top: 555px;
-    left: 100px;
-    width: 65%;
+    margin: 0 auto;
+        width: 65%;
     background-color: #0d264f;
     padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
 }
 
 
@@ -214,7 +255,8 @@ ul li {
     top: 540px;
     left: 260px;
     width: 33%;
-    
+    margin: 0 auto;
+
 }
 
 .body_middle_card_3 p {
@@ -224,13 +266,145 @@ ul li {
     font-size: 20px;
     font-weight: 700;
     top: 555px;
-    left: 100px;
-    width: 65%;
+    margin: 0 auto;
+        width: 65%;
     background-color: #0d264f;
     padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
+}
+
+.body_middle_card_4 h2 {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    top: 540px;
+    left: 260px;
+    width: 33%;
+    margin: 0 auto;
+
+}
+
+.body_middle_card_4 p {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    top: 555px;
+    margin: 0 auto;
+        width: 65%;
+    background-color: #0d264f;
+    padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
+}
+
+
+.body_middle_card_5 h2 {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    top: 540px;
+    left: 260px;
+    width: 33%;
+    margin: 0 auto;
+
+}
+
+.body_middle_card_5 p {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    top: 555px;
+    margin: 0 auto;
+        width: 65%;
+    background-color: #0d264f;
+    padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
+}
+
+.body_middle_card_6 h2 {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    top: 540px;
+    left: 260px;
+    width: 33%;
+    margin: 0 auto;
+
+}
+
+.body_middle_card_6 p {
+    position: relative;
+    color: #A8B2D1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    top: 555px;
+    margin: 0 auto;
+        width: 65%;
+    background-color: #0d264f;
+    padding: 25px;
+        margin-bottom: 55px;
+        border-radius: 10px ;
 }
 
 ._div_body_middle {
-    display: flex;
+    display: block;
     width: 100%;
+    position: relative;
+    top: 850px;
+}
+
+
+
+.section_body_bottom {
+    position: absolute;
+    bottom: 0; 
+    top: 1550px;
+  
+}
+
+._div_body_bottom  {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1750px;
+
+}
+
+.h2_body_bottom {
+    position: relative;
+    top: 1750px;
+    color: #3663ab;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    left: 360px;
+    width: 100%;
+}
+
+.hr_button {
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    top: 1750px;
+    left: 550px;
+    width: 50%;
+}
+
+.button_body_bottom {
+    position: relative;
+    top: 1750px;
 }
