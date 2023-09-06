@@ -65,6 +65,7 @@ ul li {
     font-size: 25px;
 }
 .navbar_link:hover {
+    transition: 0.3s ease-in-out;
     color: #2571eb;
 }
 
@@ -81,6 +82,7 @@ ul li {
     left: 80px;
     font-size: 30px;
     background-color: none;
+    
 }
 
 .translate {
@@ -106,6 +108,7 @@ ul li {
     font-weight: 700;
     top: 350px;
     left: 360px;
+
 }
 
 
@@ -118,7 +121,13 @@ ul li {
     font-weight: 600;
     top: 350px;
     left: 360px;
+
 }
+
+
+
+
+
 .image_top_left {
     position: absolute;
     width: 100%;
@@ -465,6 +474,7 @@ ul li {
     padding: 25px;
     border-radius: 10px;
     background-color:  #2571eb;
+    border:  2px #2571eb solid;
 }
 
 .img_body_footer {
@@ -487,6 +497,18 @@ justify-content: center;
 gap: 15px;
 }
 
+
+.button_body_bottom:hover {
+    color: #2571eb;
+    background-color: #fff;
+}
+
+.span_body_footer:hover {
+
+    color: #2571eb;
+    background-color: #fff;
+}
+
 .remonter {
     position: absolute;
     top: 3600px;
@@ -498,4 +520,9 @@ gap: 15px;
     background-color: #2571eb;
     border-radius: 15px;
     padding: 15px;
+}
+
+.remonter:hover {
+    color: #2571eb;
+    background-color: #fff;
 }
