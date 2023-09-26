@@ -48,8 +48,7 @@ body {
     display: flex;
     gap: 45px;
     padding-top: 35px;
-    padding-right: 105px;
-    justify-content: end;
+    justify-content: center;
 }
 
 ul li {
@@ -527,3 +526,141 @@ gap: 15px;
     background-color: #fff;
 }
 
+
+
+/* Tablette */
+@media (max-width: 768px) {
+
+    * {
+        width: 50%;
+    }
+
+    .navbar {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .navbar_title {
+    position: static;
+    margin-bottom: 10px;
+    }
+    
+    .translate {
+    width: 80%;
+    }
+    
+    .img_top_global {
+    width: 80%;
+    }
+    span {
+        text-align: center;
+        width: 100%;
+      }
+    
+      button {
+        display: flex;
+        justify-content: center;
+      }
+    
+    .vertical-line {
+    display: none;
+    }
+    
+    .section_body_middle h1 {
+    font-size: 40px;
+    text-align: center;
+    }
+    
+    .section_body_middle hr {
+    margin: 0 auto;
+    }
+    
+    ._div_body_middle {
+    flex-wrap: wrap;
+    }
+    
+    .body_middle_card_1,
+    .body_middle_card_2,
+    .body_middle_card_3,
+    .body_middle_card_4,
+    .body_middle_card_5,
+    .body_middle_card_6 {
+    width: 45%;
+    margin: 0 auto 20px;
+    }
+    
+    .button_body_bottom {
+    position: static;
+    width: 60%;
+    margin: 0 auto;
+    }
+    
+    .section_body_footer {
+    text-align: center;
+    }
+    
+    .span_body_footer {
+    position: static;
+    width: 60%;
+    margin: 0 auto;
+    }
+    
+    footer {
+    flex-direction: column;
+    }
+    
+    }
+    
+    /* Mobile */
+    @media (max-width: 480px) {
+    
+    .navbar {
+    padding: 10px;
+    }
+    
+    .navbar_link {
+    font-size: 18px;
+    }
+    
+    .translate {
+    width: 90%;
+    }
+    
+    .span_body_top_2 {
+    font-size: 30px;
+    }
+    
+    .span_body_top_4 {
+    font-size: 18px;
+    }
+    
+    .section_body_middle h1 {
+    font-size: 30px;
+    }
+    
+    .body_middle_card_1,
+    .body_middle_card_2,
+    .body_middle_card_3,
+    .body_middle_card_4,
+    .body_middle_card_5,
+    .body_middle_card_6 {
+    width: 90%;
+    }
+    
+    .h2_body_bottom {
+    font-size: 30px;
+    }
+    
+    .button_body_bottom {
+    width: 90%;
+    }
+    
+    .h2_body_footer {
+    font-size: 30px;
+    }
+    
+    .span_body_footer {
+    width: 90%;
+    }
+    
+    }
