@@ -530,7 +530,9 @@ gap: 15px;
 
 /* Tablette */
 @media (max-width: 768px) {
-
+    img {
+        display: none;
+    }
     * {
         width: 50%;
     }
@@ -550,7 +552,7 @@ gap: 15px;
     }
     
     .img_top_global {
-    width: 80%;
+    display: none;
     }
     span {
         text-align: center;
@@ -613,6 +615,9 @@ gap: 15px;
     
     /* Mobile */
     @media (max-width: 480px) {
+        img {
+            display: none;
+        }
     
     .navbar {
     padding: 10px;
@@ -662,5 +667,7 @@ gap: 15px;
     .span_body_footer {
     width: 90%;
     }
-    
+    .img_top_global {
+        display: none;
+        }
     }
