@@ -529,7 +529,72 @@ gap: 15px;
 
 
 
-/* Tablette */
+/* Tablet */
 @media (max-width: 768px) {
-    
+    .navbar {
+        flex-direction: row; /* Changed to column */
+        padding-top: 20px;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .navbar_title, .navbar_link {
+        font-size: 20px;
+        text-align: center; /* Centered text */
+    }
+
+
+
+    .span_body_top_2 {
+        font-size: 35px;
+        left: 15px;
+        top: 75px;
+    }
+
+    .span_body_top_4 {
+        font-size: 18px;
+      left: 15px;
+      top: 75px;
+
+    }
+
+    .image_top_left, img, .vertical-line, .img_body_footer {
+        display: none; /* Hide all images */
+    }
+
+    .vertical-line_github {
+        display: none; /* Hide github line */
+    }
+
+    .section_body_middle h1, .section_body_middle hr, 
+    .body_middle_card_1 h2, .body_middle_card_2 h2, 
+    .body_middle_card_3 h2, .body_middle_card_4 h2, 
+    .body_middle_card_5 h2, .body_middle_card_6 h2, 
+    .body_middle_card_1 p, .body_middle_card_2 p,
+    .body_middle_card_3 p, .body_middle_card_4 p, 
+    .body_middle_card_5 p, .body_middle_card_6 p {
+        position: relative; /* Changed to static flow */
+        margin: 0 auto; /* Center align */
+        left: 0;
+        margin-top: 25px;
+        top: 170px; /* Remove left shift */
+        width: 80%; /* Maintain width consistency */
+    }
+
+    ._div_body_middle,
+    .section_body_bottom, .section_body_footer,
+    .div_body_bottom, .div_body_footer,
+    .h2_body_bottom, .h2_body_footer,
+    .hr_bottom, .hr_footer,
+    .button_body_bottom, .span_body_footer {
+        position: relative; /* Changed to static flow */
+        top: 400px; /* Remove left shift */
+        flex-direction: row;
+        left: 0; /* Remove left shift */
+    }
+
+    footer, .remonter {
+        position: relative; /* Changed to static flow */
+        margin-top: 20px; /* Give space before footer */
+    }
 }
