@@ -1,93 +1,229 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css"> 
         <link rel="shortcut icon" href="assets/icone.png">
-        <title>Portfolio - Jimmy Beugnies</title>
-    </head>
+    <title>Portfolio - Jimmy Beugnies</title>
+</head>
+
+<body>
     <header>
-        <nav class="navbar" id="accueil">
-            <ul>
-                <li><a class="navbar_link" href="#" >Accueil</a></li>
-            </ul>
-            <ul>
-                <li><a class="navbar_link" href="#project">Projets</a></li>
-            </ul>
-            <ul>
-                <li><a class="navbar_link profil" href="#profile">Profil</a></li>
-            </ul>
-            <ul>
-                <li><a class="navbar_link" href="#contacted">Contact</a></li>
-            </ul>
-            <ul>
-    
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Jimmy Beugnies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#project">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#profile">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacted">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <ul>
-        </ul>
-        <img class="img_top_global" src="assets/image2.png" class="image_top_right">
     </header>
 
-    <body>
-        <section class="section_body_top">
-            <div class="div_body_top">
-                <span class="span_body_top_2">Développeur web et web mobile</span>
-                <span class="span_body_top_4"><br>
-                    En tant que <font color="#e2de76">développeur web et mobile</font>,<br>
-                    je crée des solutions digitales
-                    pour répondre aux besoins <br>de la clientèles.
-                    Mon objectif est de fournir des expériences utilisateurs <br>
-                    fluides et intuitives, en utilisant les dernières technologies et <br>
-                    les meilleures pratiques de <font color="#e2de76">développement</font>.
-                    </span>
-            </div>
-            <img src="assets/image3.png" class="image_top_left">
-            <span class="vertical-line"></span>
-            <div class="div_vertical_line_github">
-                <a class="vertical-line_github" href="https://github.com/Zrtehhz">
-                    <img src="assets/logoGithub.png" class="vertical-line_github">
+    <main role="main" class="container mt-4">
+        <section class="text-center mb-4">
+            <h2>Développeur Web, Web Mobile et Intégrateur Web Junior</h2>
+            <p>En tant que développeur web et web mobile, doublé d'un intégrateur web junior, je me consacre à la création de solutions digitales innovantes et performantes. Mon engagement est de développer des expériences utilisateurs fluides et captivantes, tout en appliquant les dernières technologies et pratiques de développement. Mon approche combine une solide compréhension technique avec une sensibilité esthétique, assurant des interfaces utilisateurs intuitives et des sites web réactifs.</p>
+        </section>
+        
 
-                </a>
-            </div>
-        </section>
-        <section class="section_body_middle">
-            <div class="_div_body_middle">
-                <h1 id="project" >Projets</h1>
-                <hr>
-                <card class="body_middle_card_1">
-                    <h2>Oh My Food</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
-                </card>
-                <card class="body_middle_card_2">
-                    <h2 >Projet 2</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod deleniti quo, corrupti iure accusantium harum quas ipsum quis, quidem sapiente fugit hic error ullam aut temporibus cumque, reiciendis rerum.</p>
-                </card>
+        <section id="project">
+            <h2 class="text-center mb-4">Projets</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/imageOMF.png" alt="Oh My Food Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Oh My Food</h5>
+                        <p class="card-text">OhMyFood est un site web qui met en avant une sélection de restaurants à Paris, permettant aux visiteurs de découvrir et de réserver des menus.</p>
+                        <a href="https://github.com/Zrtehhz/Project-4" class="btn btn-info">Lien Code Source GitHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./assets/imageGenet21.PNG" alt="Genet 21 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Genet 21</h5>
+                        <p class="card-text">Genet21 est un site web réalisé pour une association, c'est un site pour les handicapés atteints de la trisomie 21.</p>
+                        <a href="https://genet21.fr/" class="btn btn-info">Visiter Genet 21</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./assets/image724.PNG" alt="77Events Image">
+                    <div class="card-body">
+                        <h5 class="card-title">77Events</h5>
+                        <p class="card-text">77Events est un site web dédié à la gestion et à la promotion d'événements, offrant une plateforme interactive pour l'organisation et la réservation d'événements variés.</p>
+                        <a href="https://github.com/Zrtehhz/Project-10" class="btn btn-info">Lien Code Source GitHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./assets/imageAB.png" alt="ArgentBank Image">
+                    <div class="card-body">
+                        <h5 class="card-title">ArgentBank</h5>
+                        <p class="card-text">ArgentBank est une application web de services bancaires en ligne, permettant aux utilisateurs de gérer leurs finances personnelles de manière sécurisée et intuitive.</p>
+                        <a href="https://github.com/Zrtehhz/Projet11" class="btn btn-info">Lien Code Source GitHub</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
-        <section class="section_body_bottom">
-            <div class="div_body_bottom">
-                <h2 class="h2_body_bottom" >Mon profil</h2>
-                <hr class="hr_bottom">
-                <button class="button_body_bottom" onclick="CV()">Mon CV</button>
-                <button class="button_body_bottom" onclick="CV2()">Mes Titres</button>
+        <section id="profile" class="text-center my-4">
+            <h2>Mon profil</h2>
+            <button class="btn btn-info" onclick="CV()">Mon CV</button>
+            <button class="btn btn-info" onclick="CV2()">Mes Titres</button>
+        </section>
 
+        <section id="skills" class="container text-center section">
+            <h2>Compétences</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-photoshop"></i> Photoshop</li>
+                <li class="list-inline-item"><i class="fab fa-php"></i> PHP</li>
+                <li class="list-inline-item"><i class="fas fa-database"></i> MySQL</li>
+                <li class="list-inline-item"><i class="fas fa-tools"></i> phpMyAdmin</li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i> JavaScript</li>
+                <li class="list-inline-item"><i class="fab fa-html5"></i> HTML</li>
+                <li class="list-inline-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                <li class="list-inline-item"><i class="fab fa-react"></i> React</li>
+                <li class="list-inline-item"><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            </ul>
+        </section>
+        <section id="about" class="container section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/profile.png" alt="Jimmy Beugnies" class="img-fluid profile-img">
+                </div>
+                <div class="col-md-6">
+                    <h2>À propos de moi</h2>
+                    <p>Je suis un développeur web passionné, doté d'une forte créativité et d'un amour inconditionnel pour l'apprentissage et la découverte de nouvelles connaissances. Ma curiosité et ma soif d'apprendre me poussent à explorer constamment de nouvelles technologies et à relever des défis techniques, tout en mettant l'accent sur la création d'expériences utilisateur enrichissantes et intuitives.</p>
+                </div>
             </div>
         </section>
-        <section class="section_body_footer">
-            <div class="div_body_footer">
-                <h2 class="h2_body_footer" id="contacted">Me contacter</h2>
-                <hr class="hr_footer">
-                <a href="#" class="span_body_footer" onclick="Contact(event)">Contact</a>
+        
+            </div>
+            
+        </section>
+        <section id="journey" class="container text-center my-4">
+            <h2>Mon parcours Informatique</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h3>Janvier 2022 - Juin 2022</h3>
+                    <p>AFPA - Développeur Web et Web Mobile - Afpa Maubeuge</p>
+                    <p>Formation en développement frontend et backend, acquisition de compétences techniques en programmation web.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>Mars 2023 - Janvier 2024</h3>
+                    <p>OpenClassrooms - Intégrateur Web - 100% Distanciel</p>
+                    <p>Formation spécialisée en développement frontend, renforcement des compétences en design et intégration web.</p>
+                </div>
             </div>
         </section>
-        <img class="img_body_footer" src="assets/image4.png" >
-        <a class="remonter" href="#accueil">Remonter</a>
-        <footer>2023 Copyright. Tout droits réservés à <font color="#e2de76"> Jimmy Beugnies</font></footer>
-    </body>
+        <section id="general-journey" class="container text-center my-4">
+            <h2>Mon Parcours Général</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h3>2017</h3>
+                    <p>CAP Carrossier Peintre (non obtenu) - Lycée Léon Blum, Draguignan</p>
+                    <p>Formation en carrosserie et peinture automobile, développement de compétences techniques dans le domaine de la réparation automobile.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2018</h3>
+                    <p>CAP Vendeur (non obtenu) - Lycée Léon Blum, Draguignan</p>
+                    <p>Formation en techniques de vente et en communication client, acquisition de compétences en gestion de la relation client et en marketing.</p>
+                </div>
+            </div>
+        </section>
+        <section id="professional-experience" class="container text-center my-4">
+            <h2>Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h3>2015</h3>
+                    <p>SDIS 83</p>
+                    <p>Expérience enrichissante au sein du Service Départemental d'Incendie et de Secours du Var, où j'ai pu développer des compétences en matière de responsabilité, de travail d'équipe et de gestion de situations d'urgence.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2023 - Présent</h3>
+                    <p>Développeur Web Junior</p>
+                    <p>Actuellement, je n'ai pas encore acquis d'expérience professionnelle directe dans le domaine du développement web. Cependant, je suis fortement motivé pour intégrer le secteur et appliquer mes compétences en développement web et mobile dans un environnement professionnel. Je suis ouvert aux opportunités et désireux d'apprendre et de croître dans ce domaine.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacted" class="text-center my-4">
+            <h2>Me contacter</h2>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact</a>
+        </section>
+    </main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Formulaire de Contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Formulaire de contact -->
+        <form id="contactForm" action="sendEmail.php" method="POST">
+            <div class="form-group">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="contactType" id="entreprise" value="entreprise">
+              <label class="form-check-label" for="entreprise">Entreprise</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="contactType" id="particulier" value="particulier">
+              <label class="form-check-label" for="particulier">Particulier</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Numéro de Téléphone</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Valider</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="footer mt-auto py-3  text-white text-center">
+        <div class="container">
+            <span>2023 Copyright. Tout droits réservés à Jimmy Beugnies</span>
+        </div>
+    </footer>
+
+
     <script src="./script.js"></script>
-    </html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
