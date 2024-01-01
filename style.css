@@ -1,77 +1,54 @@
 body {
-    background-color: #050F1F; /* Fond sombre */
+    background-color: #050F1F;
     font-family: Arial, sans-serif;
-    color: #ffffff; /* Texte en blanc pour contraste */
+    color: #ffffff;
 }
 
 .navbar {
-    background-color: transparent !important; /* Navbar transparente */
+    background-color: transparent !important;
     box-shadow: none;
 }
 
 .navbar-brand {
     font-size: 1.5em;
-    color: #00ff00; /* Couleur verte pour le titre */
-    text-shadow: 2px 2px 4px #000000; /* Effet d'ombre sur le texte */
+    color: #00ff00;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .nav-link {
-    color: #00ffff !important; /* Couleur bleue pour les liens */
+    color: #00ffff !important;
     transition: color 0.3s ease-in-out;
+    font-size: 1.2em;
 }
 
 .nav-link:hover {
-    color: #ffffff !important; /* Couleur orange au survol */
-    text-decoration: underline; /* Souligne au survol */
+    color: #ffffff !important;
+    text-decoration: underline;
 }
 
 .card {
-    background-color: #012f4a; /* Fond des cartes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée plus intense */
+    background-color: #012f4a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card-title, .card-text {
-    color: #20b2aa; /* Texte des cartes en vert clair */
+    color: #20b2aa;
 }
 
 .card-img-top {
-    height: auto; /* Hauteur fixe pour toutes les images */
-    width: 100%; /* Largeur fixe à la largeur de la carte */
+    height: auto;
+    width: 100%;
 }
 
-.btn-primary {
-    background-color: #20b2aa; /* Boutons verts */
-    border-color: #20b2aa;
-}
-
-.btn-primary:active {
-    background-color: #20b2aa; /* Remplacez ceci par la couleur de votre choix */
-    border-color: #20b2aa; /* Assurez-vous que la couleur de la bordure correspond */
-}
-
-.btn-primary:focus {
-    background-color: #20b2aa; /* Couleur de focus */
-    border-color: #20b2aa; /* Couleur de la bordure en état focus */
-    box-shadow: #20b2aa; /* Ajustez la couleur de l'ombre si nécessaire */
-}
-
-
-.btn-primary:hover {
-    background-color: #ffffff; /* Changement au survol en orange */
-    border-color: #ffffff;
-    color: #000;
-}
 
 .footer {
-    background-color: #012f4a; /* Fond du footer en bleu foncé */
-    color: #ffffff; /* Texte du footer en blanc */
+    background-color: #012f4a;
+    color: #ffffff;
 }
 
-/* Effet de texte supplémentaire pour les titres */
 h1, h2, h3, h4, h5, h6 {
-    text-shadow: 2px 2px 4px #000000; /* Ombre sur les titres */
+    text-shadow: 2px 2px 4px #000000;
 }
-
 
 .section {
     margin-top: 50px;
@@ -81,12 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 .profile-img {
     background-color: #20b2aa;
     border-radius: 15px;
-    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
-    height: auto; /* Garde le ratio de l'image */
-    display: block; /* Élimine tout espace blanc sous l'image */
-    margin: 0 auto; /* Centre l'image si elle est plus petite que la colonne */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-
 
 @keyframes fall {
     to { transform: translateY(100vh); }
@@ -103,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: fall linear;
 }
 
-
 .timeline {
     background-color: #012f4a;
     padding: 20px;
@@ -114,41 +89,36 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
-/* Style général du formulaire */
 #contactForm {
-    background-color: #f8f9fa; /* Couleur de fond légèrement grise */
+    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     color: #000;
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour le relief */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style des champs du formulaire */
 #contactForm input[type="text"],
 #contactForm input[type="email"],
 #contactForm input[type="tel"],
 #contactForm textarea {
-    border: 1px solid #ced4da; /* Bordure des champs */
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    margin-bottom: 15px; /* Espacement entre les champs */
+    margin-bottom: 15px;
     color: #000;
 }
 
-/* Style des labels */
 #contactForm label {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Style des boutons */
 #contactForm .btn {
-    background-color: #007bff; /* Couleur bleue pour le bouton */
+    background-color: #007bff;
     border-color: #007bff;
     color: white;
 }
 
 #contactForm .btn:hover {
-    background-color: #0056b3; /* Couleur plus foncée au survol */
+    background-color: #0056b3;
     border-color: #0056b3;
 }
