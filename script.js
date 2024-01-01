@@ -6,13 +6,6 @@ function CV() {
 function CV2() {
     window.open('./assets/Titre_professionnel.pdf', '_blank');
 }
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    alert("Votre message a été envoyé avec succès.");
-});
-
-
 
 
   // pour l'effet de point vert 
