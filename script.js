@@ -24,3 +24,24 @@ function CV2() {
 
 setInterval(createFallingDot, 100);
 setInterval(createFallingDot, 100);
+
+
+function openForm() {
+    document.getElementById("myFormPopup").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myFormPopup").style.display = "none";
+}
+
+
+function submitForm() {
+    var confirmation = confirm("Voulez-vous envoyer ce message ?");
+    if (confirmation) {
+        // Soumettre le formulaire
+        document.forms[0].submit();
+
+        // Fermer la popup
+        $('#contactFormModal').modal('hide');
+    }
+}

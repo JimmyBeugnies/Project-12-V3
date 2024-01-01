@@ -89,36 +89,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
-#contactForm {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    color: #000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#contactFormModal .modal-content {
+    color: rgb(255, 255, 255); 
 }
 
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm input[type="tel"],
-#contactForm textarea {
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    color: #000;
+#contactFormModal .modal-content {
+    background-color: #3d3d3d; 
 }
 
-#contactForm label {
-    margin-bottom: 5px;
-    font-weight: bold;
+#contactFormModal input[type="text"],
+#contactFormModal input[type="email"],
+#contactFormModal textarea {
+    color: #ffffff; 
+    background-color: #3d3d3d;
 }
 
-#contactForm .btn {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-}
-
-#contactForm .btn:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+#contactFormModal label {
+    color: #ffffff; 
 }
