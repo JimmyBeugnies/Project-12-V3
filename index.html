@@ -161,56 +161,11 @@
         
         <section id="contacted" class="text-center my-4">
             <h2>Me contacter</h2>
-            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact</a>
+            <span>mail: beugniesjimmy@gmail.com, phone: 06-59-87-10-14</span>
         </section>
     </main>
 
 
-<!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Formulaire de Contact</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Formulaire de contact -->
-        <form id="contactForm" action="sendEmail.php" method="POST">
-            <div class="form-group">
-            <label for="firstName">Prénom</label>
-            <input type="text" class="form-control" id="firstName" required>
-          </div>
-          <div class="form-group">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="contactType" id="entreprise" value="entreprise">
-              <label class="form-check-label" for="entreprise">Entreprise</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="contactType" id="particulier" value="particulier">
-              <label class="form-check-label" for="particulier">Particulier</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Numéro de Téléphone</label>
-            <input type="tel" class="form-control" id="phone">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Valider</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <footer class="footer mt-auto py-3  text-white text-center">
