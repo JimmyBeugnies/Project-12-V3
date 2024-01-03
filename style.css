@@ -1,8 +1,33 @@
 body {
-    background-color: #050F1F;
+    background-color: #081f43;
     font-family: Arial, sans-serif;
     color: #ffffff;
+    --sb-track-color: #005880;
+    --sb-thumb-color: #0078ff;
+    --sb-size: 9px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
 }
+
+
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+    
+    }
+
+
 
 .navbar {
     background-color: transparent !important;
@@ -16,18 +41,20 @@ body {
 }
 
 .nav-link {
-    color: #00ffff !important;
+    color: #ffffff !important;
     transition: color 0.3s ease-in-out;
     font-size: 1.2em;
 }
 
 .nav-link:hover {
-    color: #ffffff !important;
+    color: #000000 !important;
+    background-color: #fafcff;
+    border-radius: 5px;
     text-decoration: underline;
 }
 
 .card {
-    background-color: #012f4a;
+    background-color: #031530;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -40,10 +67,13 @@ body {
     width: 100%;
 }
 
+.btn-info {
+    background-color: #031530;
+    border-color: #20b2aa;
+}
 
 .footer {
-    background-color: #012f4a;
-    color: #ffffff;
+background: rgb(0, 68, 116);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-img {
-    background-color: #16678d;
+    background-color: #0d3775;
     border-radius: 15px;
     max-width: 100%;
     height: auto;
@@ -72,15 +102,15 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     width: 5px;
     height: 5px;
-    background-color: rgb(69, 144, 214);
-    border-radius: 50%;
+    background: rgb(53, 192, 238);
+    border-radius: 15px;
     opacity: 0.7;
     top: -10px;
     animation: fall linear;
 }
 
 .timeline {
-    background-color: #012f4a;
+    background-color: #031530;
     padding: 20px;
     border-radius: 8px;
 }
@@ -106,4 +136,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #contactFormModal label {
     color: #ffffff; 
+}
+
+
+
+
+.Techno {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+.topLogoJava {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
