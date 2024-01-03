@@ -15,3 +15,6 @@ $body .= "Message:\n$message\n";
 mail($to, $subject, $body, $mailheader) or die("Erreur !");
 echo "Message envoyé!";
 ?>
+
+
+<!-- Méthode $_Post = request HTTP ( url ) -->
