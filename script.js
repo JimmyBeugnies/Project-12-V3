@@ -8,8 +8,9 @@ function CV2() {
 }
 
 
-  // pour l'effet de point vert 
 
+
+// Effet falling dot ( point qui descend en continu de haut en bas )
   function createFallingDot() {
     const dot = document.createElement('div');
     dot.classList.add('falling-dot');

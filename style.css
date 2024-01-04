@@ -1,5 +1,5 @@
 body {
-    background-color: #081f43;
+    background-color: #0c2c61;
     font-family: Arial, sans-serif;
     color: #ffffff;
     --sb-track-color: #005880;
@@ -139,6 +139,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+#imgPosAbsolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#imgPosAbsoluteV2 {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    z-index: -1;
+}
 
 
 .Techno {
