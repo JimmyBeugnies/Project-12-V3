@@ -1,171 +1,69 @@
 body {
-    background-color: #0c2c61;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    --sb-track-color: #005880;
-    --sb-thumb-color: #0078ff;
-    --sb-size: 9px;
-  
-    scrollbar-color: var(--sb-thumb-color) 
-                     var(--sb-track-color);
+    background-color: black;
+    color: rgb(0, 228, 0); 
+    font-family: 'Courier New', Courier, monospace;
+    cursor: crosshair;
+}
+
+a:hover {
+    background-color: rgb(0, 228, 0); 
+    color: black;
 }
 
 
-  
-  body::-webkit-scrollbar {
-    width: var(--sb-size) 
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--sb-track-color);
-    border-radius: 3px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: var(--sb-thumb-color);
-    border-radius: 3px;
-    
-    }
-
-
-
-.navbar {
-    background-color: transparent !important;
-    box-shadow: none;
+#black-bg {
+    background-color: #000;
 }
 
-.navbar-brand {
-    font-size: 1.5em;
-    color: #00ff00;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.nav-link {
-    color: #ffffff !important;
-    transition: color 0.3s ease-in-out;
-    font-size: 1.2em;
-}
-
-.nav-link:hover {
-    color: #000000 !important;
-    background-color: #fafcff;
-    border-radius: 5px;
-    text-decoration: underline;
-}
-
-.card {
-    background-color: #031530;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.card-title, .card-text {
-    color: #20b2aa;
-}
-
-.card-img-top {
-    height: auto;
-    width: 100%;
-}
-
-.btn-info {
-    background-color: #031530;
-    border-color: #20b2aa;
-}
-
-.footer {
-background: rgb(0, 68, 116);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.profile-img {
-    background-color: #0d3775;
-    border-radius: 15px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-@keyframes fall {
-    to { transform: translateY(100vh); }
-}
-
-.falling-dot {
-    position: fixed;
-    width: 5px;
-    height: 5px;
-    background: rgb(53, 192, 238);
-    border-radius: 15px;
-    opacity: 0.7;
-    top: -10px;
-    animation: fall linear;
-}
-
-.timeline {
-    background-color: #031530;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.timeline-event {
-    margin-bottom: 30px;
-}
-
-#contactFormModal .modal-content {
-    color: rgb(255, 255, 255); 
-}
-
-#contactFormModal .modal-content {
-    background-color: #3d3d3d; 
-}
-
-#contactFormModal input[type="text"],
-#contactFormModal input[type="email"],
-#contactFormModal textarea {
-    color: #ffffff; 
-    background-color: #3d3d3d;
-}
-
-#contactFormModal label {
-    color: #ffffff; 
-}
-
-
-
-#imgPosAbsolute {
+#binary-background {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: -1;
-}
-
-#imgPosAbsoluteV2 {
-    position: absolute;
-    bottom: 20%;
-    width: 100%;
-    z-index: -1;
-}
-
-
-.Techno {
+    height: 100%;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 25px;
-    width: 100%;
+    flex-direction: row;
+    animation: binary-animation 10s linear infinite;
 }
 
-
-.topLogoJava {
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.binary-line {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
 }
+
+.binary-line span {
+    display: block;
+    animation: reveal 1s steps(1) forwards;
+    opacity: 0;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-green-500 {
+    color: rgb(0, 228, 0) !important; 
+}
+
+.bg-green-500, .bg-green-500:hover {
+    background-color: rgb(0, 228, 0) !important;
+ color: #000;
+}
+
+.border-green-500 {
+    border-color: rgb(0, 228, 0) !important; 
+
+}
+
+.cursor-crosshair {
+    background-color: rgb(0, 228, 0);  
+
+}
+

@@ -1,233 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css"> 
-        <link rel="shortcut icon" href="assets/icone.png">
-    <title>Portfolio - Jimmy Beugnies</title>
+    <title>Portfolio de Jimmy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Jimmy Beugnies</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#project">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#profile">Profil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacted">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+<body class="bg-black text-green-500 cursor-crosshair">
+    <header class="fixed w-full bg-black p-4 shadow-lg z-10 border-b-2 border-green-500" >
+        <nav class="container mx-auto flex justify-between items-center" id="black-bg">
+            <a href="#" class="text-xl font-bold">Portfolio de Jimmy</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-black hover:bg-green-500 p-2 rounded">À propos</a></li>
+                <li><a href="#projects" class="hover:text-black hover:bg-green-500 p-2 rounded">Projets</a></li>
+                <li><a href="#skills" class="hover:text-black hover:bg-green-500 p-2 rounded">Compétences</a></li>
+                <li><a href="#contact" class="hover:text-black hover:bg-green-500 p-2 rounded">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main role="main" class="container mt-4">
-        <section class="text-center mb-4">
-            <h2>Développeur Web, Web Mobile et Intégrateur Web Junior</h2>
-            <p>En tant que développeur web et web mobile, doublé d'un intégrateur web junior, je me consacre à la création de solutions digitales innovantes et performantes. Mon engagement est de développer des expériences utilisateurs fluides et captivantes, tout en appliquant les dernières technologies et pratiques de développement. Mon approche combine une solide compréhension technique avec une sensibilité esthétique, assurant des interfaces utilisateurs intuitives et des sites web réactifs.</p>
+
+    <main class="pt-20 relative">
+        <div class="absolute inset-0 z-0 bg-black overflow-hidden">
+            <div id="binary-background" class="absolute inset-0"></div>
+        </div>
+        <section class="h-screen flex flex-col items-center justify-center bg-cover bg-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Bonjour, je suis Jimmy</h1>
+            <p class="text-2xl">Bienvenue sur mon portfolio</p>
         </section>
-        
 
-        <section id="project">
-            <h2 class="text-center mb-4">Projets</h2>
-            <div class="card-deck">
-                <article class="card">
-                    <img class="card-img-top" src="./assets/imageOMF.png" alt="Oh My Food Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Oh My Food</h5>
-                        <p class="card-text">OhMyFood est un site web qui met en avant une sélection de restaurants à Paris, permettant aux visiteurs de découvrir et de réserver des menus.</p>
-                        <a href="https://github.com/Zrtehhz/Project-4" class="btn btn-info">Lien Code Source GitHub</a>
-                        <span class="Techno badge badge-danger">HTML / CSS</span>
-
-                    </div>
-                </article>
-                <article class="card">
-                    <img class="card-img-top" src="./assets/imageGenet21.PNG" alt="Genet 21 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Genet 21</h5>
-                        <p class="card-text">Genet21 est un site web réalisé pour une association, c'est un site pour les handicapés atteints de la trisomie 21.</p>
-                        <a href="https://genet21.fr/" class="btn btn-info">Visiter Genet 21</a>
-                        <span class="Techno badge badge-danger">PHP / MYSQL / HTML / CSS / JS</span>
-
-                    </div>
-                </article>
-                <article class="card">
-                    <img class="card-img-top" src="./assets/image724.PNG" alt="77Events Image">
-                    <div class="card-body">
-                        <h5 class="card-title">77Events</h5>
-                        <p class="card-text">77Events est un site web dédié à la gestion et à la promotion d'événements, offrant une plateforme interactive pour l'organisation et la réservation d'événements variés.</p>
-                        <a href="https://github.com/Zrtehhz/Project-10" class="btn btn-info">Lien Code Source GitHub</a>
-                        <span class="Techno badge badge-warning">ReactJS</span>
-
-                    </div>
-                </article>
-                <article class="card">
-                    <img class="card-img-top" src="./assets/imageAB.png" alt="ArgentBank Image">
-                    <div class="card-body">
-                        <h5 class="card-title">ArgentBank</h5>
-                        <p class="card-text">ArgentBank est une application web de services bancaires en ligne, permettant aux utilisateurs de gérer leurs finances personnelles de manière sécurisée et intuitive.</p>
-                        <a href="https://github.com/Zrtehhz/Projet11" class="btn btn-info">Lien Code Source GitHub</a>
-                        <span class="Techno badge badge-warning">ReactJS</span>
-                    </div>
-                </article>
-                
+        <section id="about" class="container mx-auto py-20 px-4 border-b-2 border-green-500 relative z-10">
+            <h2 class="text-4xl font-bold mb-4">À propos de moi</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://source.unsplash.com/random/300x300?person" alt="À propos de moi" class="w-48 h-48 rounded-full mr-6 mb-6 md:mb-0">
+                <p class="text-lg leading-relaxed">Je m'appelle Jimmy, j'ai 24 ans et je suis détenteur de 2 titres DWWM. Je maîtrise React.js, HTML5/CSS3/JavaScript, PHPMyAdmin, et MongoDB.</p>
             </div>
         </section>
 
-        <section id="profile" class="text-center my-4">
-            <h2>Mon profil</h2>
-            <button class="btn btn-info" onclick="CV()">Mon CV</button>
-            <button class="btn btn-info" onclick="CV2()">Mes Titres</button>
-        </section>
-
-        <section id="skills" class="container text-center section">
-            <h2>Compétences</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fab fa-php"></i> PHP</li>
-                <li class="list-inline-item"><i class="fas fa-database"></i> MySQL</li>
-                <li class="list-inline-item"><i class="fas fa-tools"></i> phpMyAdmin</li>
-                <li class="list-inline-item"><i class="fab fa-js-square"></i> JavaScript</li>
-                <li class="list-inline-item"><i class="fab fa-html5"></i> HTML</li>
-                <li class="list-inline-item"><i class="fab fa-css3-alt"></i> CSS</li>
-                <li class="list-inline-item"><i class="fab fa-react"></i> React</li>
-                <li class="list-inline-item"><i class="fab fa-bootstrap"></i> Bootstrap</li>
-            </ul>
-        </section>
-        
-        <section id="skills" class="container text-center section">
-            <h3>Compétences En apprentissage..</h3>
-            <ul class="list-inline">
-                <li class="list-inline-item topLogoJava"><i class="fab fa-java"> Java</i></li>
-            </ul>
-        </section>  
-        <section id="about" class="container section">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="./assets/profile.png" alt="Jimmy Beugnies" class="img-fluid profile-img">
-                </div>
-                <div class="col-md-6">
-                    <h2>À propos de moi</h2>
-                    <p>Je suis un développeur web passionné, doté d'une forte créativité et d'un amour inconditionnel pour l'apprentissage et la découverte de nouvelles connaissances. Ma curiosité et ma soif d'apprendre me poussent à explorer constamment de nouvelles technologies et à relever des défis techniques, tout en mettant l'accent sur la création d'expériences utilisateur enrichissantes et intuitives.</p>
-                </div>
-            </div>
-        </section>
-        
-            </div>
-            
-        </section>
-        <section id="journey" class="container text-center my-4">
-            <h2>Mon parcours Informatique</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <h3>Janvier 2022 - Juin 2022</h3>
-                    <p>AFPA - Développeur Web et Web Mobile - Afpa Maubeuge</p>
-                    <p>Formation en développement frontend et backend, acquisition de compétences techniques en programmation web.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>Mars 2023 - Janvier 2024</h3>
-                    <p>OpenClassrooms - Intégrateur Web - 100% Distanciel</p>
-                    <p>Formation spécialisée en développement frontend, renforcement des compétences en design et intégration web.</p>
-                </div>
-            </div>
-        </section>
-        <section id="general-journey" class="container text-center my-4">
-            <h2>Mon Parcours Général</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <h3>2017</h3>
-                    <p>CAP Carrossier Peintre (non obtenu) - Lycée Léon Blum, Draguignan</p>
-                    <p>Formation en carrosserie et peinture automobile, développement de compétences techniques dans le domaine de la réparation automobile.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>2018</h3>
-                    <p>CAP Vendeur (non obtenu) - Lycée Léon Blum, Draguignan</p>
-                    <p>Formation en techniques de vente et en communication client, acquisition de compétences en gestion de la relation client et en marketing.</p>
-                </div>
-            </div>
-        </section>
-        <section id="professional-experience" class="container text-center my-4">
-            <h2>Expérience Professionnelle</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <h3>2015</h3>
-                    <p>SDIS 83</p>
-                    <p>Expérience enrichissante au sein du Service Départemental d'Incendie et de Secours du Var, où j'ai pu développer des compétences en matière de responsabilité, de travail d'équipe et de gestion de situations d'urgence.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>2023 - Présent</h3>
-                    <p>Développeur Web Junior</p>
-                    <p>Actuellement, je n'ai pas encore acquis d'expérience professionnelle directe dans le domaine du développement web. Cependant, je suis fortement motivé pour intégrer le secteur et appliquer mes compétences en développement web et mobile dans un environnement professionnel. Je suis ouvert aux opportunités et désireux d'apprendre et de croître dans ce domaine.</p>
+        <section id="projects" class="container mx-auto py-20 px-4 bg-black border-b-2 border-green-500 relative z-10">
+            <h2 class="text-4xl font-bold mb-4">Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black hover:bg-green-500">
+                    <img src="https://source.unsplash.com/random/400x300?project" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Titre du projet</h3>
+                    <p class="text-lg">Brève description du projet.</p>
+                    <a href="#" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
                 </div>
             </div>
         </section>
 
+        <section id="skills" class="container mx-auto py-20 px-4 border-b-2 border-green-500 relative z-10">
+            <h2 class="text-4xl font-bold mb-4">Compétences</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
+                    <img src="https://source.unsplash.com/random/100x100?icon" alt="React.js" class="w-20 h-20 mb-2">
+                    <p class="text-lg">React.js</p>
+                </div>
+                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
+                    <img src="https://source.unsplash.com/random/100x100?icon" alt="HTML5/CSS3" class="w-20 h-20 mb-2">
+                    <p class="text-lg">HTML5/CSS3</p>
+                </div>
+                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
+                    <img src="https://source.unsplash.com/random/100x100?icon" alt="JavaScript" class="w-20 h-20 mb-2">
+                    <p class="text-lg">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
+                    <img src="https://source.unsplash.com/random/100x100?icon" alt="PHPMyAdmin" class="w-20 h-20 mb-2">
+                    <p class="text-lg">PHPMyAdmin</p>
+                </div>
+                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
+                    <img src="https://source.unsplash.com/random/100x100?icon" alt="MongoDB" class="w-20 h-20 mb-2">
+                    <p class="text-lg">MongoDB</p>
+                </div>
+            </div>
+        </section>
 
-        <section id="contacted" class="text-center my-4">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactFormModal">
-                Contactez-moi
-              </button>
+        <section id="contact" class="container mx-auto py-20 px-4 bg-black relative z-10">
+            <h2 class="text-4xl font-bold mb-4">Contactez-moi</h2>
+            <form class="w-full max-w-lg mx-auto border-2 border-green-500 p-4 rounded-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg mb-2">Nom</label>
+                    <input type="text" id="name" class="w-full p-2 rounded-lg bg-black border border-green-500 focus:outline-none focus:border-green-400">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-2 rounded-lg bg-black border border-green-500 focus:outline-none focus:border-green-400">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg mb-2">Message</label>
+                    <textarea id="message" class="w-full p-2 rounded-lg bg-black border border-green-500 focus:outline-none focus:border-green-400"></textarea>
+                </div>
+                <button type="submit" class="w-full p-2 bg-green-500 rounded-lg hover:bg-green-600">Envoyer le message</button>
+            </form>
+            <div class="flex justify-center space-x-4 mt-8">
+                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">LinkedIn</a>
+                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">GitHub</a>
+                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">Twitter</a>
+            </div>
         </section>
     </main>
-    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactFormModalLabel">Formulaire de contact</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form action="sendmail.php" method="POST">
-                <div class="form-group">
-                  <label for="name">Nom :</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-      
-                <div class="form-group">
-                  <label for="email">Email :</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-      
-                <div class="form-group">
-                  <label for="message">Message :</label>
-                  <textarea class="form-control" id="message" name="message" required></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary" onclick="submitForm()">Envoyer</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-
-      <img id="imgPosAbsoluteV2" src="./assets/image5.png" alt="">
-
-    <footer class="footer mt-auto py-3  text-white text-center">
-       
-        <div class="container">
-            <span>2023 Copyright. Tout droits réservés à Jimmy Beugnies</span>
-        </div>
+    <footer class="text-center py-4 bg-black border-t-2 border-green-500 relative z-10">
+        <p>&copy; 2024 Jimmy. Tous droits réservés.</p>
     </footer>
-
-
-    <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

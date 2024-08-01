@@ -1,48 +1,35 @@
-function CV() {
-    window.open('./assets/cv.jpg', '_blank');
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+const binaryBackground = document.getElementById('binary-background');
+const binarySequence = '01100001'.split('');
+
+function createBinaryLine(delay) {
+    const line = document.createElement('div');
+    line.classList.add('binary-line');
+    binarySequence.forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.animationDelay = `${index * 0.5}s, ${delay}s`;
+        line.appendChild(span);
+    });
+    return line;
 }
 
-
-function CV2() {
-    window.open('./assets/Titre_professionnel.pdf', '_blank');
-}
-
-
-
-
-// Effet falling dot ( point qui descend en continu de haut en bas )
-  function createFallingDot() {
-    const dot = document.createElement('div');
-    dot.classList.add('falling-dot');
-    dot.style.left = `${Math.random() * window.innerWidth}px`;
-    dot.style.animationDuration = `${Math.random() * 3 + 2}s`; // Durée aléatoire entre 2 et 5 secondes
-    document.body.appendChild(dot);
-
-    setTimeout(() => {
-        dot.remove();
-    }, 5000);
-}
-
-setInterval(createFallingDot, 100);
-setInterval(createFallingDot, 100);
-
-
-function openForm() {
-    document.getElementById("myFormPopup").style.display = "block";
-}
-
-function closeForm() {
-    document.getElementById("myFormPopup").style.display = "none";
-}
-
-
-function submitForm() {
-    var confirmation = confirm("Voulez-vous envoyer ce message ?");
-    if (confirmation) {
-        // Soumettre le formulaire
-        document.forms[0].submit();
-
-        // Fermer la popup
-        $('#contactFormModal').modal('hide');
+function animateBinaryBackground() {
+    binaryBackground.innerHTML = '';
+    const numLines = Math.floor(Math.random() * 4) + 1; 
+    for (let i = 0; i < numLines; i++) {
+        const line = createBinaryLine(i * 1);
+        binaryBackground.appendChild(line);
     }
 }
+
+animateBinaryBackground();
+setInterval(animateBinaryBackground, 10000);
