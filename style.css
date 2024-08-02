@@ -3,67 +3,114 @@ body {
     color: rgb(0, 228, 0); 
     font-family: 'Courier New', Courier, monospace;
     cursor: crosshair;
+
 }
-
-a:hover {
-    background-color: rgb(0, 228, 0); 
-    color: black;
-}
-
-
-#black-bg {
-    background-color: #000;
-}
-
-#binary-background {
-    position: absolute;
+header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    animation: binary-animation 10s linear infinite;
+    z-index: 100;
+    background-color: #000;
 }
-
-.binary-line {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+a {
+    background-color: #000;
+    padding: 5px;
+    border-radius: 10px;
 }
-
-.binary-line span {
-    display: block;
-    animation: reveal 1s steps(1) forwards;
-    opacity: 0;
+main {  
+    position: relative;
+    z-index: 1;
 }
-
-@keyframes reveal {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+#black-bg {
+    background-color: #000;
 }
-
 .text-green-500 {
     color: rgb(0, 228, 0) !important; 
 }
-
 .bg-green-500, .bg-green-500:hover {
-    background-color: rgb(0, 228, 0) !important;
- color: #000;
+    background-color: rgb(0, 228, 0);
+    color: #000;
 }
-
 .border-green-500 {
     border-color: rgb(0, 228, 0) !important; 
-
+}
+.binary-line {
+    white-space: pre;
+    color: green;
+    opacity: 0;
+    animation: showLine 0.5s forwards;
+}
+.binary-line span {
+    opacity: 0;
+    animation: showChar 0.5s forwards;
+}
+@keyframes showChar {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes showLine {
+    to {
+        opacity: 1;
+    }
+}
+.coffee-art-line {
+    white-space: pre;
+    color: green;
+    opacity: 0;
+    animation: showLine 1s forwards;
+}
+#coffee-art-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#binary-art-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
-.cursor-crosshair {
-    background-color: rgb(0, 228, 0);  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2ccc00 #0a5700;
+  }
 
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0a5700;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2ccc00;
+    border-radius: 17px;
+    border: 10px solid #35c002;
+  }
+
+
+  @keyframes fall {
+    to {
+        transform: translateY(150vh);
+        opacity: 0;
+    }
 }
 
+.falling-binary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    animation: fall linear infinite;
+}

@@ -8,69 +8,131 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-green-500 cursor-crosshair">
-    <header class="fixed w-full bg-black p-4 shadow-lg z-10 border-b-2 border-green-500" >
-        <nav class="container mx-auto flex justify-between items-center" id="black-bg">
-            <a href="#" class="text-xl font-bold">Portfolio de Jimmy</a>
+    <header class="fixed w-full  p-4  z-100 border-b-2 border-green-500" >
+        <nav class="container mx-auto flex justify-center items-center" id="black-bg">
             <ul class="flex space-x-4">
-                <li><a href="#about" class="hover:text-black hover:bg-green-500 p-2 rounded">À propos</a></li>
-                <li><a href="#projects" class="hover:text-black hover:bg-green-500 p-2 rounded">Projets</a></li>
-                <li><a href="#skills" class="hover:text-black hover:bg-green-500 p-2 rounded">Compétences</a></li>
-                <li><a href="#contact" class="hover:text-black hover:bg-green-500 p-2 rounded">Contact</a></li>
+                <li><a href="#about" class="hover:text-black bg-green-500 p-2 rounded">A propos</a></li>
+                <li><a href="#projects" class="hover:text-black bg-green-500 p-2 rounded">Projets</a></li>
+                <li><a href="#skills" class="hover:text-black bg-green-500 p-2 rounded">Compétences</a></li>
+                <li><a href="#contact" class="hover:text-black bg-green-500 p-2 rounded">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <main class="pt-20 relative">
-        <div class="absolute inset-0 z-0 bg-black overflow-hidden">
-            <div id="binary-background" class="absolute inset-0"></div>
-        </div>
+
         <section class="h-screen flex flex-col items-center justify-center bg-cover bg-center relative z-10">
             <h1 class="text-5xl font-bold mb-4">Bonjour, je suis Jimmy</h1>
             <p class="text-2xl">Bienvenue sur mon portfolio</p>
+            <div id="coffee-art-container">
+                <div id="coffee-art-line-1" class="coffee-art-line"></div>
+                <div id="coffee-art-line-2" class="coffee-art-line"></div>
+                <div id="coffee-art-line-3" class="coffee-art-line"></div>
+                <div id="coffee-art-line-4" class="coffee-art-line"></div>
+                <div id="coffee-art-line-5" class="coffee-art-line"></div>
+                <div id="coffee-art-line-6" class="coffee-art-line"></div>
+            </div>
+            <div id="binary-art-container">
+                <div id="binary-art-line-1" class="binary-line"></div>
+                <div id="binary-art-line-2" class="binary-line"></div>
+                <div id="binary-art-line-3" class="binary-line"></div>
+                <div id="binary-art-line-4" class="binary-line"></div>
+                <div id="binary-art-line-5" class="binary-line"></div>
+                <div id="binary-art-line-6" class="binary-line"></div>
+                <div id="binary-art-line-7" class="binary-line"></div>
+                <div id="binary-art-line-8" class="binary-line"></div>
+                <div id="binary-art-line-9" class="binary-line"></div>
+                <div id="binary-art-line-10" class="binary-line"></div>
+                <div id="binary-art-line-11" class="binary-line"></div>
+                <div id="binary-art-line-12" class="binary-line"></div>
+                <div id="binary-art-line-13" class="binary-line"></div>
+                <div id="binary-art-line-14" class="binary-line"></div>
+                <div id="binary-art-line-15" class="binary-line"></div>
+                <div id="binary-art-line-16" class="binary-line"></div>
+                <div id="binary-art-line-17" class="binary-line"></div>
+                <div id="binary-art-line-18" class="binary-line"></div>
+                <div id="binary-art-line-19" class="binary-line"></div>
+                <div id="binary-art-line-20" class="binary-line"></div>
+            </div>
         </section>
-
+       
         <section id="about" class="container mx-auto py-20 px-4 border-b-2 border-green-500 relative z-10">
             <h2 class="text-4xl font-bold mb-4">À propos de moi</h2>
             <div class="flex flex-col md:flex-row items-center">
-                <img src="https://source.unsplash.com/random/300x300?person" alt="À propos de moi" class="w-48 h-48 rounded-full mr-6 mb-6 md:mb-0">
-                <p class="text-lg leading-relaxed">Je m'appelle Jimmy, j'ai 24 ans et je suis détenteur de 2 titres DWWM. Je maîtrise React.js, HTML5/CSS3/JavaScript, PHPMyAdmin, et MongoDB.</p>
+                <p class="text-lg leading-relaxed">Je m'appelle Jimmy, j'ai 24 ans et je suis détenteur de 2 titres DWWM. J'utilise React, NodeJS, HTML5/CSS3/JavaScript, PHPMyAdmin, MySQL et MongoDB. Aucune expérience en entreprise mais est prêt à s'investir à 200% pour en avoir.</p>
             </div>
         </section>
 
         <section id="projects" class="container mx-auto py-20 px-4 bg-black border-b-2 border-green-500 relative z-10">
             <h2 class="text-4xl font-bold mb-4">Projets</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black hover:bg-green-500">
-                    <img src="https://source.unsplash.com/random/400x300?project" alt="Projet 1" class="mb-4 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-2">Titre du projet</h3>
-                    <p class="text-lg">Brève description du projet.</p>
-                    <a href="#" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/ohmyfood1.PNG" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">OhMyFood</h3>
+                    <p class="text-lg">Projet Formation OhMyFood, Objectif  Animation CSS / Loader Pages</p>
+                    <a href="https://jimmybeugnies.github.io/Project-4/index.html" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/carducci1.PNG" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Nina Carducci</h3>
+                    <p class="text-lg">Projet Formation Nina Carducci, Objectif  Optimisation code / Images / CEO </p>
+                    <a href="https://jimmybeugnies.github.io/project-9/" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/printit1.PNG" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Print It</h3>
+                    <p class="text-lg">Projet Formation Print It, Objectif  Ajout Slider + Dots</p>
+                    <a href="https://jimmybeugnies.github.io/Project-5/" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/imageAB.png" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">ArgentBank</h3>
+                    <p class="text-lg">Projet Formation ArgentBank, Objectif Liaison api Backend/frontend + Fix bugs</p>
+                    <a href="https://github.com/JimmyBeugnies/Projet11" class="text-green-500 hover:text-black mt-2 block">Lien code source github</a>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/image724.PNG" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">724Events</h3>
+                    <p class="text-lg">Projet Formation 724Events, Objectif  Fix Bugs React</p>
+                    <a href="https://github.com/JimmyBeugnies/Project-10" class="text-green-500 hover:text-black mt-2 block">Lien code source github</a>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg border-2 border-green-500 hover:text-black bg-green-500">
+                    <img src="./assets/imageGenet21.PNG" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">genet21</h3>
+                    <p class="text-lg">Création association genet21, Objectif  création site web pour une association genet21 Situé à louvroil peut de temps après ma formation à l'afpa.</p>
+                    <a href="https://genet21.fr/" class="text-green-500 hover:text-black mt-2 block">Voir le projet</a>
                 </div>
             </div>
+            
         </section>
 
         <section id="skills" class="container mx-auto py-20 px-4 border-b-2 border-green-500 relative z-10">
             <h2 class="text-4xl font-bold mb-4">Compétences</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
-                    <img src="https://source.unsplash.com/random/100x100?icon" alt="React.js" class="w-20 h-20 mb-2">
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logo-react.png" alt="React.js" class="w-20 h-20 mb-2">
                     <p class="text-lg">React.js</p>
                 </div>
-                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
-                    <img src="https://source.unsplash.com/random/100x100?icon" alt="HTML5/CSS3" class="w-20 h-20 mb-2">
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logoHTML5.png" alt="HTML5/CSS3" class="w-20 h-20 mb-2">
                     <p class="text-lg">HTML5/CSS3</p>
                 </div>
-                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
-                    <img src="https://source.unsplash.com/random/100x100?icon" alt="JavaScript" class="w-20 h-20 mb-2">
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logoJS.png" alt="JavaScript" class="w-30 h-20 mb-2">
                     <p class="text-lg">JavaScript</p>
                 </div>
-                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
-                    <img src="https://source.unsplash.com/random/100x100?icon" alt="PHPMyAdmin" class="w-20 h-20 mb-2">
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logoPHPMyadmin.png" alt="PHPMyAdmin" class="w-20 h-20 mb-2">
                     <p class="text-lg">PHPMyAdmin</p>
                 </div>
-                <div class="flex flex-col items-center hover:text-black hover:bg-green-500 p-2 rounded">
-                    <img src="https://source.unsplash.com/random/100x100?icon" alt="MongoDB" class="w-20 h-20 mb-2">
-                    <p class="text-lg">MongoDB</p>
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logonode.png" alt="MongoDB" class="w-20 h-20 mb-2">
+                    <p class="text-lg">NodeJS</p>
+                </div>
+                <div class="flex flex-col items-center hover:text-black bg-green-500 p-2 rounded">
+                    <img src="./assets/logomysql.png" alt="MongoDB" class="w-20 h-20 mb-2">
+                    <p class="text-lg">Mysql</p>
                 </div>
             </div>
         </section>
@@ -93,9 +155,9 @@
                 <button type="submit" class="w-full p-2 bg-green-500 rounded-lg hover:bg-green-600">Envoyer le message</button>
             </form>
             <div class="flex justify-center space-x-4 mt-8">
-                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">LinkedIn</a>
-                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">GitHub</a>
-                <a href="#" class="hover:text-black hover:bg-green-500 p-2 rounded">Twitter</a>
+                <a href="https://www.linkedin.com/in/jimmy-beugnies-530871286/" class="hover:text-black bg-green-500 p-2 rounded">LinkedIn</a>
+                <a href="https://github.com/JimmyBeugnies" class="hover:text-black bg-green-500 p-2 rounded">GitHub</a>
+                <a href="#" onclick="cv()" class="hover:text-black bg-green-500 p-2 rounded">CV</a>
             </div>
         </section>
     </main>
