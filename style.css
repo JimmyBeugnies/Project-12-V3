@@ -10,7 +10,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 110;
     background-color: #000;
 }
 a {
@@ -28,9 +28,16 @@ main {
 .text-green-500 {
     color: rgb(0, 228, 0) !important; 
 }
-.bg-green-500, .bg-green-500:hover {
+.bg-green-500{
     background-color: rgb(0, 228, 0);
     color: #000;
+    border: 1px solid;
+}
+.bg-green-500:hover {
+    color: rgb(0, 228, 0);
+    border: 1px solid;
+    border-color: #2ccc00;
+    background-color: #000;
 }
 .border-green-500 {
     border-color: rgb(0, 228, 0) !important; 
